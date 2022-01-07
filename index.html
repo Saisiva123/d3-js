@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        rect,
+        .circle {
+            fill: rgb(70, 143, 202);
+            opacity: 0.5;
+            z-index: 1
+        }
+
+        .domain,
+        .tick {
+            font-size: 12px;
+            font-weight: 100;
+            text-transform: capitalize;
+            stroke: rgb(120 117 117);
+        }
+
+        .text {
+            fill: white
+        }
+
+        .heading {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .tick line {
+            stroke: #c0c0bb;
+            z-index: 0
+        }
+
+        .line-path {
+            stroke: rgb(70, 143, 202);
+            stroke-width: 3;
+            fill: none
+        }
+
+        .area-path {
+            fill: rgb(70, 143, 202);
+            opacity: 1;
+            z-index: 100;
+        }
+
+        .legends {
+            fill: rgb(120 117 117);
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .menus {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+            gap: 11px;
+            padding: 29px;
+            align-items: center;
+
+        }
+
+        .menus select {
+            font-size: 15px;
+            padding: 7px 14px;
+            border-radius: 5px;
+            background: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menus">
+        <span id="yMenu"></span> vs
+        <span id="xMenu"></span>
+    </div>
+    <script src="best scatter chart.js"></script>
+</body>
+
+</html>
