@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 
 <head>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+
+</script>
     <style>
         rect,
         .circle {
@@ -33,9 +38,11 @@
         }
 
         .line-path {
-            stroke: rgb(70, 143, 202);
-            stroke-width: 3;
-            fill: none
+            stroke-width: 2;
+            fill: none;
+            stroke-linejoin: round; 
+            /* stroke-linecap:round;
+            mix-blend-mode: multiply;*/
         }
 
         .area-path {
@@ -75,7 +82,7 @@
         <span id="yMenu"></span> vs
         <span id="xMenu"></span>
     </div>
-    <script src="best scatter chart.js"></script>
+    <script src="multi line chart.js"></script>
 </body>
 
 </html>
